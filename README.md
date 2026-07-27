@@ -1,35 +1,61 @@
 # 📊 Mutual Fund Analytics Dashboard
+### End-to-End Data Analytics Project using Python, SQL, SQLite & Power BI
 
-![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?logo=powerbi&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
-![SQL](https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
-![GitHub](https://img.shields.io/badge/GitHub-Portfolio-black?logo=github)
+<p align="center">
+
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)
+![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?style=for-the-badge&logo=sqlite)
+![SQL](https://img.shields.io/badge/SQL-Analytics-orange?style=for-the-badge)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge&logo=pandas)
+![GitHub](https://img.shields.io/badge/GitHub-Portfolio-black?style=for-the-badge&logo=github)
+
+</p>
 
 ---
 
-## 📌 Project Overview
+# 📌 Project Overview
 
-The **Mutual Fund Analytics Dashboard** is an end-to-end Data Analytics project developed using **Python, SQL, SQLite, and Power BI**. The project analyzes mutual fund performance, investor transactions, and portfolio holdings to provide meaningful business insights through interactive dashboards.
+The **Mutual Fund Analytics Dashboard** is a complete **Data Analytics** project designed to analyze the performance of mutual funds, investor behavior, portfolio holdings, and fund performance using real-world financial datasets.
 
-The project demonstrates the complete analytics workflow:
+The project demonstrates the complete analytics workflow from **raw CSV files** to an **interactive Power BI Dashboard** using **Python**, **SQL**, **SQLite**, and **Power BI**.
 
-- Data Collection
-- Data Cleaning
-- Database Design
-- SQL Analysis
-- Python Exploratory Data Analysis (EDA)
-- Interactive Power BI Dashboard Development
+This project is intended for learning and portfolio purposes and demonstrates practical data analytics skills used in industry.
 
 ---
 
 # 🎯 Project Objectives
 
-- Analyze mutual fund performance.
-- Track Assets Under Management (AUM).
-- Evaluate investor behavior and investment trends.
-- Analyze portfolio holdings across sectors.
-- Build interactive dashboards for business decision-making.
+- Analyze mutual fund performance
+- Track Assets Under Management (AUM)
+- Evaluate investor transaction behavior
+- Analyze portfolio holdings
+- Compare fund performance metrics
+- Build interactive business dashboards
+- Generate actionable business insights
+
+---
+
+# 🚀 Project Workflow
+
+```
+Raw CSV Data
+      │
+      ▼
+Python Data Validation
+      │
+      ▼
+SQLite Database
+      │
+      ▼
+SQL Business Analysis
+      │
+      ▼
+Python Exploratory Data Analysis (EDA)
+      │
+      ▼
+Power BI Dashboard
+```
 
 ---
 
@@ -37,60 +63,84 @@ The project demonstrates the complete analytics workflow:
 
 | Technology | Purpose |
 |------------|---------|
-| Python | Data Cleaning & EDA |
+| Python | Data Cleaning & Automation |
 | Pandas | Data Processing |
 | Matplotlib | Data Visualization |
 | SQLite | Database Management |
 | SQL | Business Analysis |
 | Power BI | Dashboard Development |
-| DAX | KPI Measures |
-| Git & GitHub | Version Control |
+| DAX | KPI Calculations |
+| Git | Version Control |
+| GitHub | Project Hosting |
 
 ---
 
-# 📁 Project Structure
+# 📂 Project Structure
 
-```text
+```
 mutual-fund-analytics/
+
+│── dashboard/
+│     └── Mutual_Fund_Analytics.pbix
 │
-├── dashboard/
-│   └── Mutual_Fund_Analytics.pbix
+│── data/
+│     └── raw/
 │
-├── data/
+│── database/
+│     └── mutual_fund.db
 │
-├── database/
-│   └── mutual_fund.db
+│── reports/
+│     ├── day1_data_quality.md
+│     ├── day2_database.md
+│     └── day3_sql_analysis.md
 │
-├── reports/
+│── scripts/
+│     ├── create_database.py
+│     ├── data_ingestion.py
+│     ├── data_quality_check.py
+│     ├── eda_analysis.py
+│     ├── fund_master_analysis.py
+│     ├── live_nav_fetch.py
+│     ├── validate_amfi.py
+│     └── ...
 │
-├── scripts/
+│── sql/
+│     ├── 01_database_overview.sql
+│     ├── 02_fund_analysis.sql
+│     ├── 03_nav_analysis.sql
+│     ├── 04_performance_analysis.sql
+│     ├── 05_portfolio_analysis.sql
+│     └── 06_business_questions.sql
 │
-├── sql/
+│── visualizations/
 │
-├── README.md
-├── requirements.txt
-├── LICENSE
-└── .gitignore
+│── README.md
+│── requirements.txt
+│── .gitignore
 ```
 
 ---
 
-# 📊 Dashboard Pages
+# 📊 Power BI Dashboard
 
-## 1️⃣ Executive Dashboard
+The Power BI report consists of **4 Interactive Dashboard Pages**.
 
-Provides a high-level overview of the mutual fund ecosystem.
+---
+
+## 📈 1. Executive Dashboard
+
+Provides an overview of the entire mutual fund ecosystem.
 
 ### KPIs
 
 - Total Funds
 - Total Fund Houses
 - Total Transactions
-- Total AUM
+- Total Assets Under Management
 - Average NAV
 - Average Expense Ratio
 
-### Visualizations
+### Charts
 
 - Risk Category Distribution
 - Fund Category Distribution
@@ -99,9 +149,9 @@ Provides a high-level overview of the mutual fund ecosystem.
 
 ---
 
-## 2️⃣ Fund Analysis Dashboard
+## 📈 2. Fund Analysis Dashboard
 
-Analyzes mutual fund performance across different return periods.
+Analyzes mutual fund performance.
 
 ### KPIs
 
@@ -111,19 +161,19 @@ Analyzes mutual fund performance across different return periods.
 - Average Alpha
 - Average Sharpe Ratio
 
-### Visualizations
+### Charts
 
 - Top Performing Funds
-- Top Expense Ratio Funds
+- Expense Ratio Comparison
 - Alpha Comparison
 - Morningstar Ratings
 - Risk vs Return Analysis
 
 ---
 
-## 3️⃣ Investor Analysis Dashboard
+## 👥 3. Investor Analysis Dashboard
 
-Analyzes investor demographics and transaction behavior.
+Analyzes investor demographics and investment behavior.
 
 ### KPIs
 
@@ -133,20 +183,20 @@ Analyzes investor demographics and transaction behavior.
 - Total Transactions
 - Average Annual Income
 
-### Visualizations
+### Charts
 
-- Top States by Investment
+- Investment by State
 - Investment by Gender
 - Investment by Age Group
-- Investment by Payment Mode
+- Payment Mode Distribution
 - Monthly Investment Trend
 - KYC Status Distribution
 
 ---
 
-## 4️⃣ Portfolio Analysis Dashboard
+## 💼 4. Portfolio Analysis Dashboard
 
-Analyzes stock holdings and sector allocations.
+Analyzes stock holdings and sector allocation.
 
 ### KPIs
 
@@ -156,63 +206,125 @@ Analyzes stock holdings and sector allocations.
 - Average Stock Price
 - Average Portfolio Weight
 
-### Visualizations
+### Charts
 
 - Top Holdings by Market Value
 - Portfolio Weight Distribution
 - Top Stocks by Current Price
 - Sector-wise Portfolio Value
-- Portfolio Value Trend
+- Portfolio Trend
 
 ---
 
-# 📈 Key Business Insights
+# 📷 Dashboard Preview
 
-- Identified the highest-performing mutual funds based on long-term returns.
-- Compared expense ratios across different funds.
-- Analyzed investor demographics and investment patterns.
-- Evaluated portfolio diversification by sector.
-- Monitored portfolio value trends over time.
-- Built interactive dashboards for quick business insights.
+> Export your dashboard pages from Power BI and place them inside the repository.
+
+### Executive Dashboard
+
+![Executive Dashboard](visualizations/executive_dashboard.png)
 
 ---
 
-# ⚡ Features
+### Fund Analysis
 
-- Interactive Power BI Dashboards
-- SQL-Based Business Analysis
-- Python Exploratory Data Analysis
-- KPI Cards
+![Fund Analysis](visualizations/fund_analysis.png)
+
+---
+
+### Investor Analysis
+
+![Investor Analysis](visualizations/investor_analysis.png)
+
+---
+
+### Portfolio Analysis
+
+![Portfolio Analysis](visualizations/portfolio_analysis.png)
+
+---
+
+# 📊 SQL Analysis
+
+The project includes multiple SQL scripts covering:
+
+- Database Overview
+- Fund Analysis
+- NAV Analysis
+- Performance Analysis
+- Portfolio Analysis
+- Business Questions
+
+---
+
+# 📈 Python Analysis
+
+Python was used for:
+
+- Data Validation
+- Data Cleaning
+- Database Creation
+- Data Quality Checks
+- Exploratory Data Analysis (EDA)
+- Visualization Generation
+- NAV Data Processing
+
+---
+
+# 📌 Key Insights
+
+- Identified top-performing mutual funds based on long-term returns.
+- Compared expense ratios across fund houses.
+- Analyzed investor demographics and investment behavior.
+- Visualized monthly investment trends.
+- Evaluated sector-wise portfolio allocation.
+- Compared portfolio holdings by market value.
+- Built interactive dashboards for business decision-making.
+
+---
+
+# ⭐ Features
+
+- Interactive Power BI Dashboard
 - Dynamic Filters & Slicers
-- DAX Measures
-- Portfolio Performance Tracking
+- KPI Cards
+- SQL Business Queries
+- Python EDA
+- Portfolio Analytics
 - Investor Analytics
+- Fund Performance Analysis
+- SQLite Database
+- Clean Project Structure
 
 ---
 
-# 🚀 How to Run
+# ⚡ Installation
 
-### Clone Repository
+Clone the repository
 
 ```bash
 git clone https://github.com/Goku753/mutual-fund-analytics.git
 ```
 
-### Install Dependencies
+Open the project
+
+```bash
+cd mutual-fund-analytics
+```
+
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run Python Scripts
+Run Python analysis
 
 ```bash
 python scripts/eda_analysis.py
 ```
 
-### Open Dashboard
-
-Open:
+Open the Power BI dashboard
 
 ```
 dashboard/Mutual_Fund_Analytics.pbix
@@ -222,40 +334,28 @@ using **Microsoft Power BI Desktop**.
 
 ---
 
-# 📸 Dashboard Preview
+# 📌 Future Enhancements
 
-You can add screenshots here after exporting them from Power BI.
-
-Example:
-
-```markdown
-![Executive Dashboard](images/executive_dashboard.png)
-```
-
----
-
-# 📌 Future Improvements
-
-- Real-time NAV updates using APIs
-- Predictive analytics using Machine Learning
-- Power BI Service deployment
-- Interactive forecasting
-- Portfolio recommendation engine
+- Live Mutual Fund API Integration
+- Real-Time NAV Tracking
+- Power BI Service Deployment
+- Machine Learning Return Prediction
+- Portfolio Recommendation System
+- Automated Dashboard Refresh
 
 ---
 
 # 👨‍💻 Author
 
-**Sujoy Rana**
+## **Sujoy Rana**
 
-🎓 B.Tech (Computer Science & AI/ML)
+**B.Tech – Computer Science & Artificial Intelligence & Machine Learning**
 
-📧 Email: your-email@example.com
+📍 West Bengal, India
 
-🔗 LinkedIn: https://www.linkedin.com/in/your-linkedin/
-
-💻 GitHub: https://github.com/Goku753
+🔗 GitHub:
+https://github.com/Goku753
 
 ---
 
-# ⭐ If you found this project useful, don't forget to star the repository!
+# 🌟 If you like this project, please give it a ⭐ on GitHub!
